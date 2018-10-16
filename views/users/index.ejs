@@ -8,6 +8,19 @@
 </head>
 <body>
     <h1>This is our user page</h1>
-   
+        <ul>
+                <li><a href='/'>Home</a></li>
+                <li><a href='/users/new'>New User</a></li>
+        </ul>
+
+
+        <% for(let i = 0; i < users.length; i++){ %>
+            <li>
+              <a href="/users/<%=users[i]%>"><%=users[i]%></a>
+            </li>
+                <a href='user/edit.ejs'>Edit</a>
+         <% } %>
+       
+        
 </body>
 </html>

@@ -7,11 +7,9 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Home Page</h1><br/>
-
-    <a href="users/">Users</a><br/>
-    <a href="photos/index.ejs">Photos</a>
-
-
+    <form action='/users' mothod="POST">
+        Name: <input type='text' name='name'>
+        <input type='submit'>
+    </form>
 </body>
 </html>
